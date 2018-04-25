@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: rem-calc(14);
+  line-height: 1.42857143;
+  color: #333;
+}
+
+input,textarea,select{
+  font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ul{
+  li{
+    list-style: none;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+$color: #00DFB9;
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.of-hidden {
+  overflow: hidden;
+}
+
+.col-xs-3 {
+  width: 25%;
+  float: left;
+}
+
+.col-xs-4 {
+  width: 33.3333%;
+  float: left;
+}
+
+.col-xs-6 {
+  width: 50%;
+  float: left;
+}
+
+.col-xs-2 {
+  width: 16.66666667%;
+  float: left;
+}
+
+.col-xs-10 {
+  width: 83.33333333%;
+  float: left;
+}
+
+
+.checkbox,
+.radio {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.checkbox label,
+.radio label {
+  min-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-top: 4px \9;
+  margin-left: -20px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.text-overflow-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.img-responsive{
+  height: auto;
+  width: 100%;
+}
+

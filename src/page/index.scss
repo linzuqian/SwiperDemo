@@ -1,0 +1,14 @@
+@import "~@/assets/scss/public.scss";
+
+.page-index{
+  .swiper-container{
+    width: 100%;
+    height: 100vh;
+    .swiper-slide{
+      position: relative;
+      &.swiper-footer{
+        height: 80px;
+      }
+    }
+  }
+}
