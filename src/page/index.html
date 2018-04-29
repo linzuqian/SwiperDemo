@@ -1,5 +1,29 @@
 <div class="page-index">
-  <swiper :options="swipersOption">
+  <div class="components-header">
+   <!-- <hr id="nav-top">  -->
+    <div class="header-box">
+      <div class="header-left">
+      <img src="@/assets/images/logo.png" alt="">
+    </div>
+    <div class="header-nav">
+      <ul>
+        <li v-for="(item,index) in swiperNav" 
+          :class="{active:currentIndex == index}"
+          @click="switchPage(index)"
+          @mouseenter="movein(index)"
+          @mouseleave="moveout">{{item}}</li>
+        <li id="backgroundSlide"></li>
+      </ul>
+    </div>
+    <div class="header-right">
+      <a href="tel:4000-000-000">
+        <i class="el-icon-phone"></i>4000-000-000
+      </a>
+      <i class="el-icon-menu"></i>
+    </div>
+    </div>
+  </div>
+  <swiper :options="swipersOption" ref="mySwiper">
     <swiper-slide>
       <home-page></home-page>
     </swiper-slide>
@@ -14,6 +38,15 @@
     </swiper-slide>
     <swiper-slide>
       <quality></quality>
+    </swiper-slide>
+    <swiper-slide>
+      <increment></increment>
+    </swiper-slide>
+    <swiper-slide>
+      <about></about>
+    </swiper-slide>
+    <swiper-slide>
+      <contact></contact>
     </swiper-slide>
     <swiper-slide class="swiper-footer">
       <swiper-footer></swiper-footer>

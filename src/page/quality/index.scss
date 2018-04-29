@@ -1,5 +1,8 @@
 @import "~@/assets/scss/public.scss";
 
 .page-quality-index{
-  
+  height: 100%;
+  width: 100%;
+  background: url("./images/quality-bg.jpg") center no-repeat;
+  background-size: cover;
 }

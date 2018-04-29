@@ -21,7 +21,7 @@ export default {
           prevEl: '.swiper-button-prev'
         },
         autoplay:  true,
-        mousewheel: true
+        mousewheel: false
       }
     }
   },
