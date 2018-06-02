@@ -79,7 +79,7 @@ export default {
     movein (index) {
       this.slideLi(index)
     },
-    slideLi(index){
+    slideLi(index) {
       let bg = document.getElementById("backgroundSlide")
       let currentLi = document.getElementsByTagName('li')[0].offsetWidth
       bg.style.left = currentLi*index + 'px' 

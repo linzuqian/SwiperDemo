@@ -21,7 +21,14 @@ export default {
           prevEl: '.swiper-button-prev'
         },
         autoplay:  true,
-        mousewheel: false
+        mousewheel: false,
+        on: {
+          // slideChangeTransitionEnd: function () {
+          //   // alert(this.activeIndex)
+          //   let bg = document.getElementById('backgroundSlide')
+          //   bg.style.left = '-50%'
+          // }
+        }
       }
     }
   },
